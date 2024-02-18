@@ -1,0 +1,25 @@
+---
+// Importa tus componentes React
+import React from 'react';
+import InputComponent from '/src/components/InputComponent.jsx';
+import DisplayComponent from '/src/components/DisplayCOmponent.jsx';
+import Button from '/src/components/Button.jsx';
+import Likes from '../components/Likes.jsx';
+---
+
+<html>
+<head>
+  <title>Ejemplo Astro con React y Nanostores</title>
+</head>
+<body>
+  <div>
+    <InputComponent client:load />
+    <DisplayComponent client:load />
+    <Button client:load />
+  </div>
+
+  <div>
+    <Likes client:load/>
+  </div>
+</body>
+</html>
